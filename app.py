@@ -31,7 +31,8 @@ def process_query():
         print(ra)
         if query:
             return render_template('analysis.html', query=query)
-    return query
+    return("Error: Missing query")
+
 
 
 if __name__ == '__main__':
